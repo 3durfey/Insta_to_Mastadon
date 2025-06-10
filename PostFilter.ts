@@ -1,4 +1,6 @@
 import { DateCompare } from "./DateCompare.js";
+import { addToMastadon } from "./MastadonAPI.js";
+import { unlink } from "fs/promises";
 
 // @ts-ignore
 export async function PostFilter(page) {
@@ -16,6 +18,9 @@ export async function PostFilter(page) {
       if (datetimeAttr) {
         if (DateCompare(datetimeAttr)) {
           await page.screenshot({ path: `${x}.png` });
+          addToMastadon(`${x}.png`, "");
+          await page.waitForTimeout(2000);
+          await unlink(`${x}.png`);
         }
       }
     }
