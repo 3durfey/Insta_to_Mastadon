@@ -1,0 +1,24 @@
+import { DateCompare } from "./DateCompare.js";
+
+// @ts-ignore
+export async function PostFilter(page) {
+  for (let x = 8; x < 20; ++x) {
+    const main = page.getByRole("main").locator("a").nth(x);
+    await main.click();
+    await page.waitForTimeout(5000);
+    const timeElement = page.locator("time");
+    if (!timeElement) {
+      continue;
+    } else {
+      const datetimeAttr: string | null = await timeElement.getAttribute(
+        "datetime"
+      );
+      if (datetimeAttr) {
+        if (DateCompare(datetimeAttr)) {
+          await page.screenshot({ path: `${x}.png` });
+        }
+      }
+    }
+    await page.goBack();
+  }
+}

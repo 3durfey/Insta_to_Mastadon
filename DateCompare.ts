@@ -1,5 +1,11 @@
+/**
+ * Function takes date string and returns
+ * whether or not the date is from the previous day.
+ * @param datetimeAttr
+ * @returns Boolean
+ */
+
 export function DateCompare(datetimeAttr: string): boolean {
-  // Get proper format for post date.
   let postDate: Date = new Date(datetimeAttr);
   let postDateFormatted = postDate.toLocaleDateString("en-CA");
 
@@ -9,5 +15,6 @@ export function DateCompare(datetimeAttr: string): boolean {
   let yesterdayDate = yesterday.toLocaleDateString("en-CA");
 
   const isYesterday: boolean = postDateFormatted === yesterdayDate;
+
   return isYesterday;
 }
