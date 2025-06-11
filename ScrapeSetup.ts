@@ -15,7 +15,7 @@ export async function ScrapeSetup(postURL: string) {
     await Login(page);
     await page.goto(postURL);
     await page.waitForTimeout(2000);
-    await PostFilter(page);
+    await PostFilter(page, postURL);
     await context.close();
   } catch (error) {
     console.log("Error: ", error);

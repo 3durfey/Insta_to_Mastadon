@@ -3,13 +3,13 @@ import { addToMastadon } from "./MastadonAPI.js";
 import { unlink } from "fs/promises";
 
 // @ts-ignore
-export async function PostFilter(page) {
-  for (let x = 8; x < 20; ++x) {
+export async function PostFilter(page, postURL) {
+  for (let x = 6; x < 20; ++x) {
     const main = page.getByRole("main").locator("a").nth(x);
     await main.click();
     await page.waitForTimeout(5000);
     const timeElement = page.locator("time");
-    if (timeElement) {
+    if ((await timeElement.count()) > 0) {
       const datetimeAttr: string | null = await timeElement.getAttribute(
         "datetime"
       );
@@ -22,6 +22,6 @@ export async function PostFilter(page) {
         }
       }
     }
-    await page.goBack();
+    await page.goto(postURL);
   }
 }
