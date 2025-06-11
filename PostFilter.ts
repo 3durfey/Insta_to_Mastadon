@@ -9,9 +9,7 @@ export async function PostFilter(page) {
     await main.click();
     await page.waitForTimeout(5000);
     const timeElement = page.locator("time");
-    if (!timeElement) {
-      continue;
-    } else {
+    if (timeElement) {
       const datetimeAttr: string | null = await timeElement.getAttribute(
         "datetime"
       );

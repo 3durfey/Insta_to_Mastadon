@@ -7,14 +7,10 @@ export async function addToMastadon(imageURL: string, statusText: string) {
     url: process.env.URL as string,
     accessToken: process.env.TOKEN,
   });
-
-  // Create media from a local file
   const attachment1 = await masto.v2.media.create({
     file: new Blob([fs.readFileSync(imageURL)]),
     description: "Some image",
   });
-
-  // Publish!
   const status = await masto.v1.statuses.create({
     status: statusText,
     visibility: "public",
