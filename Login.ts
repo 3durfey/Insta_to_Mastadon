@@ -33,6 +33,7 @@ export async function Login(page) {
   }
   if (await page.getByRole("textbox", { name: "Username" }).isVisible()) {
     await page.getByRole("textbox", { name: "Username" }).fill(username);
+    console.log("Testing login.");
     await page.getByLabel("Password").fill(password);
     await page.locator('button[type="submit"]').click();
   }
