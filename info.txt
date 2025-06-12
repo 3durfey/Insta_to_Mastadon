@@ -1,0 +1,7 @@
+KEY = "ifdv4adoqLWCvMkof0_jAlTrLXzmuNy5Bw6oMC6NLz4"
+SECRET =  "uI9S1FQ_ySp-oeViIQpK_bPOiHV0fcC6R7ecFW9Tifc" 
+TOKEN = "K0qnvzEWS1oHuZldmrFRtY0Uk03owbiCkrwpLW523tE"
+URL = "https://mastodon.social"
+
+INSTA_USERNAME = "instaMastadon@proton.me"
+INSTA_PASSWORD = "Bi*P9H$ccDI%cm"

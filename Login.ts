@@ -32,10 +32,14 @@ export async function Login(page) {
     throw new Error("Env variable password not set");
   }
   if (await page.getByRole("textbox", { name: "Username" }).isVisible()) {
-    await page.getByRole("textbox", { name: "Username" }).fill(username);
-    console.log("Testing login.");
-    await page.getByLabel("Password").fill(password);
-    await page.locator('button[type="submit"]').click();
+    try {
+      await page.getByRole("textbox", { name: "Username" }).fill(username);
+      console.log("Testing login.");
+      await page.getByLabel("Password").fill(password);
+      await page.locator('button[type="submit"]').click();
+    } catch (error) {
+      console.log(error);
+    }
   }
   await page.waitForTimeout(5000);
   console.log("User logged in.");

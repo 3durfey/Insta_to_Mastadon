@@ -36,4 +36,5 @@ export async function addToMastadon(imageURL: string, statusText: string) {
     visibility: "public",
     mediaIds: [attachment1.id],
   });
+  console.log("Posted item.");
 }
