@@ -38,12 +38,11 @@ export async function PostFilter(page, postURL) {
         if (DateCompare(datetimeAttr)) {
           await page.screenshot({ path: `${x}.png` });
           addToMastadon(`${x}.png`, "");
-          await page.waitForTimeout(2000);
           await unlink(`${x}.png`);
         }
       }
     } catch (error) {
-      console.log(error);
+      console.log("PostFilter error: ", error);
     }
     await page.goto(postURL);
   }

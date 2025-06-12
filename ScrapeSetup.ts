@@ -33,11 +33,12 @@ export async function ScrapeSetup(postURL: string) {
     });
     const page = await context.newPage();
     await Login(page);
+    await page.waitForTimeout(2000);
     await page.goto(postURL);
     await page.waitForTimeout(2000);
     await PostFilter(page, postURL);
     await context.close();
   } catch (error) {
-    console.log("Error: ", error);
+    console.log("Error in ScrapeSetup: ", error);
   }
 }
