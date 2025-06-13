@@ -4,7 +4,7 @@ This Node.js automation tool visits specific Instagram posts, takes a **screensh
 
 Features
 
-- Uses Patchwright (https://github.com/patchwright/patchwright) — a drop-in replacement for Playwright with stealth patches to avoid bot detection
+- Uses Patchwright — a drop-in replacement for Playwright with stealth patches to avoid bot detection
 - Captures screenshots of Instagram posts instead of downloading media
 - Filters for posts from yesterday only
 - Reposts screenshot + caption to Mastodon
