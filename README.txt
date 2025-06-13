@@ -1,6 +1,6 @@
 Insta to Mastodon Reposter
 
-This Node.js automation tool visits specific Instagram posts, takes a **screenshot**, and reposts it with a caption to a **Mastodon** account. It's designed to run daily and only repost content from the **previous day**.
+This Node.js automation tool visits posts from specified Instagram accounts, takes a screenshot, and reposts it with a caption to a Mastodon account. It's designed to run daily and only repost content from the previous day.
 
 Features
 
