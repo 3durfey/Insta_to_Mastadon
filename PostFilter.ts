@@ -26,31 +26,46 @@ import { addToMastadon } from "./MastadonAPI.js";
 import { unlink } from "fs/promises";
 
 // @ts-ignore
+async function newPage(page, postURL, isPost) {
+  if (isPost) {
+    const exitButton = await page.locator('[aria-label="Close"]');
+    await exitButton.click();
+  } else {
+    await page.goto(postURL);
+  }
+}
+// @ts-ignore
+async function checkDate(page, isPost, linkNum) {
+  const timeElement = page.locator("time");
+  if ((await timeElement.count()) > 0) {
+    isPost = true;
+    const datetimeAttr: string = await timeElement.getAttribute("datetime");
+    if (DateCompare(datetimeAttr)) {
+      await page.screenshot({ path: `${linkNum}.png` });
+      addToMastadon(`${linkNum}.png`, "");
+      await unlink(`${linkNum}.png`);
+    }
+  } else {
+    isPost = false;
+  }
+  return isPost;
+}
+
+// @ts-ignore
+async function nextLink(page, linkNum) {
+  const main = page.getByRole("main").locator("a").nth(linkNum);
+  await main.click();
+}
+// @ts-ignore
 export async function PostFilter(page, postURL) {
   let isPost: boolean = false;
   for (let x = 6; x < 20; ++x) {
     try {
-      if (isPost) {
-        const exitButton = await page.locator('[aria-label="Close"]');
-        await exitButton.click();
-      } else {
-        await page.goto(postURL);
-      }
-      await page.waitForTimeout(5000);
-      const main = page.getByRole("main").locator("a").nth(x);
-      await main.click();
-      await page.waitForTimeout(5000);
-      // Check for time element which indicates its a post link
-      const timeElement = page.locator("time");
-      if ((await timeElement.count()) > 0) {
-        isPost = true;
-        const datetimeAttr: string = await timeElement.getAttribute("datetime");
-        if (DateCompare(datetimeAttr)) {
-          await page.screenshot({ path: `${x}.png` });
-          addToMastadon(`${x}.png`, "");
-          await unlink(`${x}.png`);
-        }
-      }
+      await newPage(page, postURL, isPost);
+      await page.waitForTimeout(3000);
+      await nextLink(page, x);
+      await page.waitForTimeout(3000);
+      isPost = await checkDate(page, isPost, x);
     } catch (error) {
       console.log("PostFilter error: ", error);
     }
