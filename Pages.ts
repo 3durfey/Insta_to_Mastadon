@@ -16,8 +16,6 @@ import { ScrapeSetup } from "./ScrapeSetup.js";
 
 let accounts: string[] = [
   "https://www.instagram.com/bikepartyindianapolis/",
-  //"https://www.instagram.com/fuckjerry/",
+  "https://www.instagram.com/northmassboulder/",
 ];
-for (let x = 0; x < accounts.length; x++) {
-  ScrapeSetup(accounts[x]);
-}
+ScrapeSetup(accounts);

@@ -23,7 +23,7 @@ import "dotenv/config";
 import { Login } from "./Login.js";
 import { PostFilter } from "./PostFilter.js";
 
-export async function ScrapeSetup(postURL: string) {
+export async function ScrapeSetup(postURLs: string[]) {
   const userDataDir = "./chrome-user-data";
   try {
     const context = await chromium.launchPersistentContext(userDataDir, {
@@ -34,9 +34,9 @@ export async function ScrapeSetup(postURL: string) {
     const page = await context.newPage();
     await Login(page);
     await page.waitForTimeout(2000);
-    await page.goto(postURL);
-    await page.waitForTimeout(2000);
-    await PostFilter(page, postURL);
+    for (let x = 0; x < postURLs.length; x++) {
+      await PostFilter(page, postURLs[x]);
+    }
     await context.close();
   } catch (error) {
     console.log("Error in ScrapeSetup: ", error);

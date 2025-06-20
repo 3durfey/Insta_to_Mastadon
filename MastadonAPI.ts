@@ -39,6 +39,6 @@ export async function addToMastadon(imageURL: string, statusText: string) {
     });
     console.log("User logged in.");
   } catch (error) {
-    console.log("Mastadon Post fail: ", error);
+    console.log("Mastodon Post fail: ", error);
   }
 }

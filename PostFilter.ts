@@ -27,13 +27,23 @@ import { unlink } from "fs/promises";
 
 // @ts-ignore
 export async function PostFilter(page, postURL) {
+  let isPost: boolean = false;
   for (let x = 6; x < 20; ++x) {
     try {
+      if (isPost) {
+        const exitButton = await page.locator('[aria-label="Close"]');
+        await exitButton.click();
+      } else {
+        await page.goto(postURL);
+      }
+      await page.waitForTimeout(5000);
       const main = page.getByRole("main").locator("a").nth(x);
       await main.click();
       await page.waitForTimeout(5000);
+      // Check for time element which indicates its a post link
       const timeElement = page.locator("time");
       if ((await timeElement.count()) > 0) {
+        isPost = true;
         const datetimeAttr: string = await timeElement.getAttribute("datetime");
         if (DateCompare(datetimeAttr)) {
           await page.screenshot({ path: `${x}.png` });
@@ -44,6 +54,5 @@ export async function PostFilter(page, postURL) {
     } catch (error) {
       console.log("PostFilter error: ", error);
     }
-    await page.goto(postURL);
   }
 }
