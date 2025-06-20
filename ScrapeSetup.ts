@@ -33,7 +33,7 @@ export async function ScrapeSetup(postURLs: string[]) {
     });
     const page = await context.newPage();
     await Login(page);
-    await page.waitForTimeout(2000);
+    await page.waitForTimeout(5000);
     for (let x = 0; x < postURLs.length; x++) {
       await PostFilter(page, postURLs[x]);
     }

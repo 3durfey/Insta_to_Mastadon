@@ -34,6 +34,7 @@ async function newPage(page, postURL, isPost) {
     await page.goto(postURL);
   }
 }
+
 // @ts-ignore
 async function checkDate(page, isPost, linkNum) {
   const timeElement = page.locator("time");
@@ -56,6 +57,7 @@ async function nextLink(page, linkNum) {
   const main = page.getByRole("main").locator("a").nth(linkNum);
   await main.click();
 }
+
 // @ts-ignore
 export async function PostFilter(page, postURL) {
   let isPost: boolean = false;

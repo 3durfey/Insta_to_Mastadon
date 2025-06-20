@@ -36,9 +36,11 @@ export async function Login(page) {
       await page.getByRole("textbox", { name: "Username" }).fill(username);
       await page.getByLabel("Password").fill(password);
       await page.locator('button[type="submit"]').click();
+      console.log("User logged in.");
     } catch (error) {
       console.log("Login error: ", error);
     }
+  } else {
+    console.log("Already logged in.");
   }
-  console.log("User logged in.");
 }
