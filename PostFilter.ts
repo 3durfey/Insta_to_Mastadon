@@ -37,7 +37,7 @@ async function newPage(page, postURL, isPost) {
 
 // @ts-ignore
 async function checkDate(page, isPost, linkNum) {
-  const timeElement = page.locator("time");
+  const timeElement = page.locator("time").first();
   if ((await timeElement.count()) > 0) {
     isPost = true;
     const datetimeAttr: string = await timeElement.getAttribute("datetime");
