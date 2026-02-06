@@ -37,25 +37,29 @@ async function newPage(page, postURL, isPost) {
 
 // @ts-ignore
 async function checkDate(page, isPost, linkNum) {
-  const timeElement = page.locator("time").first();
-  if ((await timeElement.count()) > 0) {
-    isPost = true;
-    const datetimeAttr: string = await timeElement.getAttribute("datetime");
-    if (DateCompare(datetimeAttr)) {
-      await page.screenshot({ path: `${linkNum}.png` });
-      addToMastadon(`${linkNum}.png`, "");
-      await unlink(`${linkNum}.png`);
-    }
-  } else {
-    isPost = false;
+  const timeElements = page.locator("time");
+  const timeCount = await timeElements.count();
+  if (timeCount === 0) {
+    return false;
+  }
+  isPost = true;
+  const datetimeAttr = await timeElements.first().getAttribute("datetime");
+  if (datetimeAttr && DateCompare(datetimeAttr)) {
+    await page.screenshot({ path: `${linkNum}.png` });
+    addToMastadon(`${linkNum}.png`, "");
+    await unlink(`${linkNum}.png`);
   }
   return isPost;
 }
 
 // @ts-ignore
 async function nextLink(page, linkNum) {
-  const main = page.getByRole("main").locator("a").nth(linkNum);
-  await main.click();
+  const links = page.getByRole("main").locator("a");
+  const totalLinks = await links.count();
+  if (linkNum >= totalLinks) {
+    throw new Error(`Link index ${linkNum} out of ${totalLinks} anchors on page`);
+  }
+  await links.nth(linkNum).click();
 }
 
 // @ts-ignore
@@ -70,6 +74,6 @@ export async function PostFilter(page, postURL) {
       isPost = await checkDate(page, isPost, x);
     } catch (error) {
       console.log("PostFilter error: ", error);
-    }
+      }
   }
 }
