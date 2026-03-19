@@ -1,0 +1,436 @@
+Already logged in.
+test1
+test
+test1
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for getByRole('main').locator('a').nth(7)
+    - locator resolved to JSHandle@<a role="link" tabindex="0" aria-label="View DEC ‘25 highlight" href="/stories/highlights/17944480692129136/" class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _a6hd">…</a>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+
+    at nextLink (/home/pd/Insta_to_Mastadon/PostFilter.ts:57:16)
+    at PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:67:19)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+PostFilter error:  locator.count: Timeout 10000ms exceeded.
+    at checkDate (/home/pd/Insta_to_Mastadon/PostFilter.ts:40:28)
+    at PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:70:28)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for getByRole('main').locator('a').nth(22)
+
+    at nextLink (/home/pd/Insta_to_Mastadon/PostFilter.ts:57:16)
+    at PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:67:19)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+test1
+test
+test1
+test
+test1
+test
+PostFilter error:  locator.count: Timeout 10000ms exceeded.
+    at checkDate (/home/pd/Insta_to_Mastadon/PostFilter.ts:40:28)
+    at PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:70:28)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for getByRole('main').locator('a').nth(15)
+    - locator resolved to JSHandle@<a role="link" tabindex="0" href="/roamandstow/p/DVehGFtjRzL/" class="x1i10hfl xjbqb8w x1ejq31n x18oe1m7 x1sy0etr xstzfhl x972fbf x10w94by x1qhh985 x14e42zd x9f619 x1ypdohk xt0psk2 x3ct3a4 xdj266r x14z9mp xat24cr x1lziwak xexx8yu xyri2b x18d9i69 x1c1uobl x16tdsg8 x1hl2dhg xggy1nq x1a2a7pz _a6hd">…</a>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+    - element is visible, enabled and stable
+    - scrolling into view if needed
+
+    at nextLink (/home/pd/Insta_to_Mastadon/PostFilter.ts:57:16)
+    at PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:67:19)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+test1
+test
+test1
+test
+test1
+test
+User logged in.
+test1
+test
+User logged in.
+test1
+test
+User logged in.
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+PostFilter error:  locator.count: Timeout 10000ms exceeded.
+    at checkDate (/home/pd/Insta_to_Mastadon/PostFilter.ts:40:28)
+    at PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:70:28)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+User logged in.
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+test1
+test
+PostFilter error:  locator.count: Timeout 10000ms exceeded.
+    at checkDate (/home/pd/Insta_to_Mastadon/PostFilter.ts:40:28)
+    at PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:70:28)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+PostFilter error:  locator.click: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator('[aria-label="Close"]')
+    - locator resolved to JSHandle@<svg role="img" width="18" height="18" aria-label="Close" fill="currentColor" viewBox="0 0 24 24" class="x1lliihq x1n2onr6 x9bdzbf">…</svg>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+
+    at newPage (/home/pd/Insta_to_Mastadon/PostFilter.ts:31:26)
+    at async PostFilter (/home/pd/Insta_to_Mastadon/PostFilter.ts:64:13)
+    at async ScrapeSetup (/home/pd/Insta_to_Mastadon/ScrapeSetup.ts:36:13) {
+  name: 'TimeoutError'
+}
+test1
+test
+test1
+test

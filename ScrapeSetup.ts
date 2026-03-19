@@ -27,7 +27,7 @@ export async function ScrapeSetup(postURLs: string[]) {
   const userDataDir = "./chrome-user-data";
   try {
     const context = await chromium.launchPersistentContext(userDataDir, {
-      channel: "chrome",
+      executablePath: "/usr/bin/chromium-browser",
       headless: false,
       viewport: null,
     });

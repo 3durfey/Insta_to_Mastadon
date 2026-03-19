@@ -61,12 +61,14 @@ async function nextLink(page, linkNum) {
 // @ts-ignore
 export async function PostFilter(page, postURL) {
   let isPost: boolean = false;
-  for (let x = 6; x < 20; ++x) {
+  for (let x = 6; x < 50; ++x) {
     try {
       await newPage(page, postURL, isPost);
-      await page.waitForTimeout(3000);
+      await page.waitForTimeout(5000);
+      console.log("test1")
       await nextLink(page, x);
-      await page.waitForTimeout(3000);
+      await page.waitForTimeout(5000);
+      console.log("test")
       isPost = await checkDate(page, isPost, x);
     } catch (error) {
       console.log("PostFilter error: ", error);
